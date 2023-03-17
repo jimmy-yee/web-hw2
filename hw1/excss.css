@@ -1,0 +1,161 @@
+body{
+  margin: 0px;
+}
+#word1{
+  display: flex;
+  width:auto;
+  height: 100px;
+  background-color: #EAE2D6;
+}
+h1 {
+  font-family: 'Bauhaus 93';
+  font-size: 30px;
+  width: 200px;
+  color: #998B7A;
+  position: relative;
+  top: 10px;
+  left: 40px;
+  
+}
+#backword{
+  font-family:'Bauhaus 93';
+  font-size: 150px;
+  width: 1000px;
+  color: white;
+  position:absolute;
+  top: 200px;
+  left: 270px;
+}
+#back{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1350px;
+  top: 35px;
+}
+
+#pic1{
+ background-color: #EAE2D6;
+ padding: 40px;
+ height: 400px;
+}
+#pig{
+  position: absolute;
+  left: 600px;
+  z-index: 2;
+}
+#money{
+  position: absolute;
+  left: 350px;
+  z-index: 1;
+}
+#money2{
+  position: absolute;
+  left: 900px;
+  z-index: 1;
+}
+#hand{
+  position: absolute;
+  left: 1070px;
+  top: 45px;
+  z-index: 2;
+}
+#hand2{
+  position: absolute;
+  left: 1300px;
+  top: 50px;
+ 
+}
+#handmoney{
+  position: absolute;
+  left: 950px;
+  top: 0px;
+  z-index: 1;
+}
+.get{
+  animation: move 4s infinite ;
+}
+
+/* 設定跑馬燈應用在maq這個區塊 */
+.maq{
+  display: flex;
+  animation: scrolling 10s linear infinite;
+  /* animation-play-state: paused; */
+
+}
+/* 手臂移動的動畫 */
+@keyframes move {
+  0%{transform: translateX(0);}
+  50%{transform: translateX(100px);}
+  100%{transform: translateX(0);}
+  
+}
+
+/* 圖片跑馬燈 */
+@keyframes scrolling {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-1475px);}
+}
+
+/* 當滑鼠停在橫條上，停止動畫 */
+.maq:hover  {
+  animation-play-state: paused;
+}
+
+/* 當滑鼠停在圖片上，放大圖片 */
+.element2:hover{
+  transform: scale(1.8 ,1.8);
+  opacity: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.putin{
+ animation: putin 4s;
+}
+@keyframes putin {
+  0%{transform: translateX(0);}
+  50%{transform: translateX(-300px);}
+  100%{transform: translate(-300px,100px);}
+  
+}
+
+#pic2{
+
+  width: 1500px;
+  height: 180px;
+  display: flex;
+  margin: 0,auto;
+  
+  
+}
+.a{
+  width: 150px;
+  height: 100px;
+}
+.element2{
+  width: 150px;
+  height: 100px;
+  margin: 3%;
+  opacity: 0.5;
+  
+  
+}
+#pic3{
+  display: flex;
+  width: 1514px;
+  height: 100px;
+ 
+}
+
+.element3{
+  width: 1500px;
+}
+
+.godownward{
+  animation: godownward 4s;
+}
+
+@keyframes godownward {
+  0%{transform: translateY(0);}
+  100%{transform: translateY(280px);}
+}
