@@ -284,7 +284,7 @@ function end(){
 }
 
 function homepage(){
-    alert('it works');
+//     alert('it works');
     var div1 = document.getElementById('pic1');
     var div2 = document.getElementById('pic2');
     var div3 = document.getElementById('pic3');
